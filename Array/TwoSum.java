@@ -3,22 +3,22 @@ package Array;
 public class TwoSum 
 {
 
-    public static int sum(int target,int num[])
+    public static int[] sum(int target,int num[])
     {
          
-        int array = 0;
+      
         for (int i = 0; i < num.length; i++) 
         {
             for (int j =  i + 1 ; j < num.length; j++) 
             {
                 if(num[i] + num[j] == target)
                 {
-                  array = num[i] + num[j];
+                  return new int[] {i, j};
                 }
             }
         }
 
-        return array;
+        return new int[] {};
     }
     public static void main(String[] args) 
     {
